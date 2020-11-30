@@ -2,7 +2,10 @@ This app can read and update user quota comprising of cpu, memory and disk
 
 ### Technologies used
 * Python 3.8
-* Flask 
+* Flask
+* Google Kubernetes Engine (GKE)
+* Terraform 0.12
+* gcloud command-line tool 
 
 ### Sample Deployment
 
