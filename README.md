@@ -10,7 +10,8 @@ This app can read and update user quota comprising of cpu, memory and disk
 
 ![POST request](docs/mywebapp-post.png) 
 
-The deployment above has been done on GKE cluster created out of [terraform module for GKE](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine)
+The deployment above has been done on GKE cluster using [terraform module](https://github.com/lintopaul/terraform-gke-module)
+created out of [upstream terraform module](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine)
  
  ### Sample deployment
  
