@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Reads quota from file
 # curl http://localhost:8080/get
 def read_quota():
-    with open('quota.json', 'r') as json_in:
+    with open('files/quota.json', 'r') as json_in:
         quota = json.load(json_in)
         print("Displays quota:\n")
         return quota
@@ -28,7 +28,7 @@ def get_quota():
 # -d '{"user3": "Jane", "cpu3": "500m", "memory3": "2Gi", "disk3": "250Gb"}' http://localhost:8080/post
 @app.route('/post', methods=['POST'])
 def update_quota():
-    with open('updated_quota.json', 'w') as json_out:
+    with open('files/updated_quota.json', 'w') as json_out:
         quota = read_quota()
         new_quota = request.get_json()
         updated_quota = dict(**quota, **new_quota)

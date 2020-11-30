@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  finalizers:
+    - service.kubernetes.io/load-balancer-cleanup
+  name: lintoz-webapp-service
+spec:
+  ports:
+  - nodePort: 32741
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: lintoz-webapp
+  type: LoadBalancer

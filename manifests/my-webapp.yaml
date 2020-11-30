@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lintoz-webapp
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lintoz-webapp
+  template:
+    metadata:
+      labels:
+        app: lintoz-webapp
+    spec:
+      containers:
+      - name: lintoz-webapp-container
+        image: gcr.io/coral-sanctuary-267609/lintoz-webapp:v1

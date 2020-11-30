@@ -1,0 +1,1 @@
+{"user1": "John", "cpu1": "128m", "memory1": "500Mi", "disk1": "100Gb", "user2": "Smith", "cpu2": "500m", "memory2": "2Gi", "disk2": "250Gb", "user3": "Jane", "cpu3": "750m", "memory3": "2Gi", "disk3": "250Gb"}
