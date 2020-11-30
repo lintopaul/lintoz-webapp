@@ -7,17 +7,13 @@ This app can read and update user quota comprising of cpu, memory and disk
 * Terraform 0.12
 * gcloud command-line tool 
 
-### Sample Deployment
-
-![GET request](docs/mywebapp-get.png)
-
-![POST request](docs/mywebapp-post.png) 
+### GKE cluster build
 
 The deployment above has been done on GKE cluster using [terraform module](https://github.com/lintopaul/terraform-gke-module)
 created out of [upstream terraform module](https://github.com/terraform-google-modules/terraform-google-kubernetes-engine)
  
- ### Sample deployment
- 
+### Sample deployment
+
 ```
 [lpaul@lions-den webapp]$ gcloud config set project coral-sanctuary-267609
 Updated property [core/project].
@@ -99,3 +95,8 @@ NAME                    TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)     
 kubernetes              ClusterIP      10.68.0.1      <none>        443/TCP        143m
 lintoz-webapp-service   LoadBalancer   10.68.13.146   34.70.237.7   80:32741/TCP   48s
 ```
+Screenshots below were taken when the app was re-deployed:-
+
+![GET request](docs/mywebapp-get.png)
+
+![POST request](docs/mywebapp-post.png) 
